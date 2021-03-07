@@ -44,7 +44,7 @@
 })();
 
 //scrolling menu efect//
-const links = document.querySelectorAll(".navigation a");
+const links = document.querySelectorAll(".menu a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
