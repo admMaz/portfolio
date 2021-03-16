@@ -95,7 +95,7 @@ body{
   font-size:2em;
   text-align:center;
   letter-spacing:0.1em;
-  padding-top:1.75em;
+  padding-top:2.5em;
   padding-bottom: 1em;
   
 }
@@ -123,14 +123,14 @@ a{
 
 .navbar-main ul{
   margin:0;
-  padding:0;
+  padding-top:0.5em;
   list-style:none;
   overflow:hidden;
 }
 
 .navbar-main ul a{
   display:block;
-  padding:0.75em;
+  padding:0.5em;
   text-decoration:none;
 }
 
@@ -141,14 +141,13 @@ a{
   transition: 0.3s all ease-out;
 }
 
-
+.logo{
+ height:2.5em; 
+}
 
 .navbar-main .logo{
-  text-decoration: none;;
-  float:left;
-  display:block;
-  font-size:1.25em;
-  padding: 0.5em 0.25em;
+  padding: 0.25em 0.25em;
+  position:fixed;
 }
 
 .navbar-main .menu{
@@ -157,7 +156,7 @@ a{
   transition: max-height .3s ease-out;
 }
 .navbar-main .menu-icon{
-  padding:28px 20px;
+  padding:1.25em 1.25em;
   position:relative;
   float:right;
   cursor:pointer;
@@ -220,15 +219,24 @@ a{
   top:0px; 
 }
 
+
+
 @media (min-width:48em){
+  .logo{
+ height:3em; 
+}
   .navbar-main{
     padding-bottom: 0.1em;
+     padding:0.25em;
+     height:3.5em;
   }
   .navbar-main li{
     float:left;
   }
+
+  
   .navbar-main li a{
-    padding: 0.5em 1.25em;
+    padding: 0.25em 1.25em;
   }
 
   .navbar-main .menu{
@@ -249,6 +257,7 @@ a{
   background-position:center;
   height:100vh;
   flex-direction: column;
+  background-attachment: fixed;
 }
 
 .main-header-text{
@@ -307,7 +316,7 @@ flex-direction:row;
 }
 
 .how-info{
-  justify-content: space-around;
+  justify-content: space-between;
   margin:1em;
   width:25%;
   box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -441,9 +450,8 @@ flex-direction: row;
     font-size:0.7em;
     transition: all 0.3s ease-in;
   }
- 
    #contact .contact-ex:hover{
-    color:#fff;
+    color:#090b1c;
     font-size:0.9em;
   }
 
@@ -468,8 +476,8 @@ flex-direction: row;
 @media (max-width: 48em) {
 
   .how-info{
-
   width:100%;
+  margin:1em 0;
   
 }
 
@@ -501,7 +509,8 @@ flex-direction: row;
    background: url(img/computerOnDesk-header-mobile.jpg);
    background-repeat: no-repeat;
    height:50vh;
-   box-shadow:none
+   box-shadow:none;
+   background-size: cover;
  }
 
  .container{
